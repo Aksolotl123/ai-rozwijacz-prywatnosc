@@ -11,7 +11,7 @@ Kontakt w sprawach prywatności: [tuz.lukasz@gmail.com](mailto:tuz.lukasz@gmail.
 ## W skrócie
 
 - Aplikacja pomaga pisać wiadomości i odpowiadać na nie z pomocą AI.
-- **Autor aplikacji nie zbiera żadnych danych.** Aplikacja nie ma własnego serwera, kont użytkowników, reklam ani analityki.
+- **Autor aplikacji nie zbiera żadnych danych** — poza zgłoszeniem odpowiedzi AI, które sam wyślesz e-mailem. Aplikacja nie ma własnego serwera, kont użytkowników, reklam ani analityki.
 - Domyślnie AI działa **na telefonie** (Gemini Nano / Gemma przez Android AICore) — nic nie wychodzi do internetu.
 - Do chmury (Google albo Anthropic) trafia treść **tylko wtedy, gdy sam wybierzesz** taki silnik i podasz własny klucz API,
   albo gdy sam przekażesz polecenie do aplikacji Claude/Gemini.
@@ -38,6 +38,7 @@ Powiadomień innych aplikacji nie zapisuje i nie przetwarza.
 | Gemini API („Rozbudowane”, Twój klucz) | Twoja notatka; przy odpowiadaniu także do 20 ostatnich wiadomości rozmowy i do 5 Twoich wcześniejszych odpowiedzi (wzorzec stylu) | Google (Gemini API) | [warunki Gemini API](https://ai.google.dev/gemini-api/terms) i [polityka prywatności Google](https://policies.google.com/privacy) — na Twoim koncie |
 | Claude API (Twój klucz) | jak wyżej | Anthropic | [zasady Anthropic](https://www.anthropic.com/legal/privacy) — na Twoim koncie |
 | „Zapytaj Claude'a / Gemini” | to samo polecenie trafia do aplikacji Claude albo Gemini na Twoim telefonie; wysyłasz je sam | Anthropic / Google w ramach Twojego konta w tych aplikacjach | zasady tych aplikacji |
+| „⚑ Zgłoś odpowiedź AI” | e-mail z treścią tej jednej odpowiedzi AI, nazwą silnika i wersją aplikacji (bez Twojej notatki i rozmowy); otwiera się w Twojej aplikacji pocztowej, wysyłasz go sam | autor aplikacji (tuz.lukasz@gmail.com) | zgłoszenie służy wyłącznie ocenie i poprawie odpowiedzi AI; usuniemy je na prośbę wysłaną na ten sam adres |
 | „Kopia zapasowa” historii | plik zaszyfrowany Twoim hasłem (PBKDF2 + AES‑256/GCM) — tam, gdzie go sam udostępnisz (np. Dysk Google) | wybrana przez Ciebie usługa | bez hasła pliku nie da się odczytać — także autorowi |
 
 Przy silnikach w chmurze okienko odpowiedzi zawsze pokazuje, dokąd trafi rozmowa. Bez internetu (albo z „Wymuś tryb offline”)

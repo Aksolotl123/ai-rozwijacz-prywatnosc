@@ -4,7 +4,7 @@ title: AI Rozwijacz — polityka prywatności
 
 # Polityka prywatności aplikacji „AI Rozwijacz”
 
-Obowiązuje od: 21 września 2026 r.
+Obowiązuje od: 22 września 2026 r.
 Aplikacja: AI Rozwijacz (Android, identyfikator `pl.airozwijacz.menu`)
 Kontakt w sprawach prywatności: [tuz.lukasz@gmail.com](mailto:tuz.lukasz@gmail.com)
 
@@ -71,9 +71,9 @@ tych firm dla Twojego konta.
 Zapisane dane są szyfrowane kluczem z Android Keystore, połączenia z API idą wyłącznie przez HTTPS, a klucze API — tylko
 w nagłówku żądania do właściwego serwera.
 
-## Dzieci
+## Wiek
 
-Aplikacja nie jest przeznaczona dla dzieci poniżej 13 lat.
+Aplikacja jest przeznaczona dla osób pełnoletnich. W Google Play jej grupa docelowa to 18 lat i więcej.
 
 ## Zmiany
 

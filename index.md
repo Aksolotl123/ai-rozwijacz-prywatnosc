@@ -4,7 +4,7 @@ title: AI Rozwijacz — polityka prywatności
 
 # Polityka prywatności aplikacji „AI Rozwijacz”
 
-Obowiązuje od: 22 września 2026 r.
+Obowiązuje od: 23 września 2026 r.
 Aplikacja: AI Rozwijacz (Android, identyfikator `pl.airozwijacz.menu`)
 Kontakt w sprawach prywatności: [tuz.lukasz@gmail.com](mailto:tuz.lukasz@gmail.com)
 
@@ -12,7 +12,8 @@ Kontakt w sprawach prywatności: [tuz.lukasz@gmail.com](mailto:tuz.lukasz@gmail.
 
 - Aplikacja pomaga pisać wiadomości i odpowiadać na nie z pomocą AI.
 - **Autor aplikacji nie zbiera żadnych danych** — poza zgłoszeniem odpowiedzi AI, które sam wyślesz e-mailem. Aplikacja nie ma własnego serwera, kont użytkowników, reklam ani analityki.
-- Domyślnie AI działa **na telefonie** (Gemini Nano / Gemma przez Android AICore) — nic nie wychodzi do internetu.
+- Domyślnie AI działa **na telefonie** (Gemini Nano / Gemma przez Android AICore albo Gemma pobrana przez aplikację) —
+  nic nie wychodzi do internetu.
 - Do chmury (Google albo Anthropic) trafia treść **tylko wtedy, gdy sam wybierzesz** taki silnik i podasz własny klucz API,
   albo gdy sam przekażesz polecenie do aplikacji Claude/Gemini.
 - Niczego nie wysyłamy za Ciebie — wiadomość wychodzi do odbiorcy wyłącznie po naciśnięciu „Wyślij”.
@@ -24,6 +25,7 @@ Kontakt w sprawach prywatności: [tuz.lukasz@gmail.com](mailto:tuz.lukasz@gmail.
 | Tekst, który zaznaczysz lub udostępnisz aplikacji | od Ciebie | żeby zredagować z niego wiadomość | w pamięci telefonu |
 | Treść powiadomień z komunikatorów (nadawca, wiadomości) | uprawnienie „Dostęp do powiadomień”, które sam włączasz | żeby pokazać rozmowę i zaproponować odpowiedź; w trybie „hub” — żeby wyświetlić własne powiadomienie z przyciskami AI | w pamięci telefonu; historia rozmów — patrz niżej |
 | Historia rozmów | z kolejnych powiadomień i Twoich odpowiedzi | żeby AI widziało wątek, a nie jedno zdanie | na telefonie, zaszyfrowana (AES‑256/GCM, klucz w Android Keystore); tylko gdy „Pamiętaj historię” jest włączone |
+| Zdjęcia z rozmów | z powiadomień komunikatorów (dostęp tylko, póki powiadomienie jest widoczne) | żeby pokazać je w okienku odpowiedzi i w powiadomieniu „hub” oraz — na Twoje żądanie — pokazać je AI | kopia na telefonie, w prywatnym katalogu aplikacji: zmniejszona, bez metadanych (np. miejsca zrobienia zdjęcia); usuwana razem z historią rozmowy |
 | Klucze API (Gemini, Anthropic) — opcjonalne | od Ciebie | żeby korzystać z płatnych modeli w chmurze na Twoim koncie | na telefonie, zaszyfrowane kluczem z Android Keystore |
 | Log użycia (silnik, czasy, co zrobiono z wynikiem) | aplikacja | porównywanie silników; eksport CSV na Twoje żądanie | na telefonie; treść tylko po włączeniu opcji „Zapisuj treść w logu” |
 
@@ -35,7 +37,8 @@ Powiadomień innych aplikacji nie zapisuje i nie przetwarza.
 | Co wybierzesz | Co jest wysyłane | Do kogo | Na jakich zasadach |
 |---|---|---|---|
 | „Normalne · Gemma” (domyślnie) | nic | — | — |
-| Gemini API („Rozbudowane”, Twój klucz) | Twoja notatka; przy odpowiadaniu także do 20 ostatnich wiadomości rozmowy i do 5 Twoich wcześniejszych odpowiedzi (wzorzec stylu) | Google (Gemini API) | [warunki Gemini API](https://ai.google.dev/gemini-api/terms) i [polityka prywatności Google](https://policies.google.com/privacy) — na Twoim koncie |
+| Pobranie modelu Gemma (na Twoje żądanie, w Ustawieniach) | nic z Twoich danych — zwykłe pobranie pliku (serwer widzi adres IP, jak przy każdym pobieraniu) | Hugging Face (huggingface.co) | [polityka prywatności Hugging Face](https://huggingface.co/privacy) |
+| Gemini API („Rozbudowane”, Twój klucz) | Twoja notatka; przy odpowiadaniu także do 20 ostatnich wiadomości rozmowy (z maks. 2 najnowszymi zdjęciami, na które odpowiadasz) i do 5 Twoich wcześniejszych odpowiedzi (wzorzec stylu) | Google (Gemini API) | [warunki Gemini API](https://ai.google.dev/gemini-api/terms) i [polityka prywatności Google](https://policies.google.com/privacy) — na Twoim koncie |
 | Claude API (Twój klucz) | jak wyżej | Anthropic | [zasady Anthropic](https://www.anthropic.com/legal/privacy) — na Twoim koncie |
 | „Zapytaj Claude'a / Gemini” | to samo polecenie trafia do aplikacji Claude albo Gemini na Twoim telefonie; wysyłasz je sam | Anthropic / Google w ramach Twojego konta w tych aplikacjach | zasady tych aplikacji |
 | „⚑ Zgłoś odpowiedź AI” | e-mail z treścią tej jednej odpowiedzi AI, nazwą silnika i wersją aplikacji (bez Twojej notatki i rozmowy); otwiera się w Twojej aplikacji pocztowej, wysyłasz go sam | autor aplikacji (tuz.lukasz@gmail.com) | zgłoszenie służy wyłącznie ocenie i poprawie odpowiedzi AI; usuniemy je na prośbę wysłaną na ten sam adres |
@@ -57,7 +60,9 @@ Biblioteka Google ML Kit, przez którą działa model na telefonie, przesyła do
 ## Przechowywanie i usuwanie
 
 - Historię rozmów możesz usunąć w całości albo po jednej rozmowie (Ustawienia → Historia rozmów) i wyłączyć jej zapis.
-  Odznaczenie komunikatora usuwa też jego historię.
+  Odznaczenie komunikatora usuwa też jego historię. Kopie zdjęć znikają razem z historią, do której należą
+  (przy wyłączonym zapisie historii — po zamknięciu aplikacji).
+- Pobrany model Gemma usuniesz w Ustawieniach → „Model na telefonie”.
 - Log wyczyścisz w Ustawieniach → Log.
 - Klucze API usuniesz przyciskiem „Usuń” w Ustawieniach.
 - Odinstalowanie aplikacji usuwa wszystkie jej dane z telefonu. Aplikacja nie korzysta z systemowych kopii zapasowych

@@ -4,7 +4,7 @@ title: AI Rozwijacz — polityka prywatności
 
 # Polityka prywatności aplikacji „AI Rozwijacz”
 
-Obowiązuje od: 23 września 2026 r.
+Obowiązuje od: 11 października 2026 r.
 Aplikacja: AI Rozwijacz (Android, identyfikator `pl.airozwijacz.menu`)
 Kontakt w sprawach prywatności: [tuz.lukasz@gmail.com](mailto:tuz.lukasz@gmail.com)
 
@@ -25,7 +25,7 @@ Kontakt w sprawach prywatności: [tuz.lukasz@gmail.com](mailto:tuz.lukasz@gmail.
 | Tekst, który zaznaczysz lub udostępnisz aplikacji | od Ciebie | żeby zredagować z niego wiadomość | w pamięci telefonu |
 | Treść powiadomień z komunikatorów (nadawca, wiadomości) | uprawnienie „Dostęp do powiadomień”, które sam włączasz | żeby pokazać rozmowę i zaproponować odpowiedź; w trybie „hub” — żeby wyświetlić własne powiadomienie z przyciskami AI | w pamięci telefonu; historia rozmów — patrz niżej |
 | Historia rozmów | z kolejnych powiadomień i Twoich odpowiedzi | żeby AI widziało wątek, a nie jedno zdanie | na telefonie, zaszyfrowana (AES‑256/GCM, klucz w Android Keystore); tylko gdy „Pamiętaj historię” jest włączone |
-| Zdjęcia z rozmów | z powiadomień komunikatorów (dostęp tylko, póki powiadomienie jest widoczne) | żeby pokazać je w okienku odpowiedzi i w powiadomieniu „hub” oraz — na Twoje żądanie — pokazać je AI | kopia na telefonie, w prywatnym katalogu aplikacji: zmniejszona, bez metadanych (np. miejsca zrobienia zdjęcia); usuwana razem z historią rozmowy |
+| Zdjęcia z rozmów | z powiadomień komunikatorów (dostęp tylko, póki powiadomienie jest widoczne); WhatsApp — tylko po włączeniu opcji „Zdjęcia z WhatsAppa”: z folderu odebranych zdjęć WhatsAppa (zdjęcie, które przyszło w chwili wiadomości; bez wysłanych i bez reszty galerii) | żeby pokazać je w okienku odpowiedzi i w powiadomieniu „hub” oraz — na Twoje żądanie — pokazać je AI | kopia na telefonie, w prywatnym katalogu aplikacji: zmniejszona, bez metadanych (np. miejsca zrobienia zdjęcia); usuwana razem z historią rozmowy |
 | Klucze API (Gemini, Anthropic) — opcjonalne | od Ciebie | żeby korzystać z płatnych modeli w chmurze na Twoim koncie | na telefonie, zaszyfrowane kluczem z Android Keystore |
 | Log użycia (silnik, czasy, co zrobiono z wynikiem) | aplikacja | porównywanie silników; eksport CSV na Twoje żądanie | na telefonie; treść tylko po włączeniu opcji „Zapisuj treść w logu” |
 
@@ -54,6 +54,9 @@ Biblioteka Google ML Kit, przez którą działa model na telefonie, przesyła do
 
 - **Dostęp do powiadomień** — włączasz go sam w ustawieniach systemu; bez niego działa pisanie z menu zaznaczania tekstu.
 - **Powiadomienia** — przycisk „✨ Odpowiedz z AI” i tryb „hub”.
+- **Dostęp do zdjęć** — tylko po włączeniu opcji „Zdjęcia z WhatsAppa” (WhatsApp nie przekazuje zdjęcia w powiadomieniu).
+  Aplikacja zagląda wyłącznie do folderu odebranych zdjęć WhatsAppa, do zdjęć z kilku minut wokół wiadomości.
+  Zgodę cofniesz w ustawieniach systemu.
 - **Internet** — tylko dla silników w chmurze, które sam wybierzesz.
 - **Ukrywanie nakładek innych aplikacji** — ochrona przed podstawieniem fałszywego przycisku nad „Wyślij”.
 

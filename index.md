@@ -4,7 +4,7 @@ title: AI Rozwijacz — polityka prywatności
 
 # Polityka prywatności aplikacji „AI Rozwijacz”
 
-Obowiązuje od: 11 października 2026 r.
+Obowiązuje od: 16 października 2026 r.
 Aplikacja: AI Rozwijacz (Android, identyfikator `pl.airozwijacz.menu`)
 Kontakt w sprawach prywatności: [tuz.lukasz@gmail.com](mailto:tuz.lukasz@gmail.com)
 
@@ -38,7 +38,7 @@ Powiadomień innych aplikacji nie zapisuje i nie przetwarza.
 |---|---|---|---|
 | „Normalne · Gemma” (domyślnie) | nic | — | — |
 | Pobranie modelu Gemma (na Twoje żądanie, w Ustawieniach) | nic z Twoich danych — zwykłe pobranie pliku (serwer widzi adres IP, jak przy każdym pobieraniu) | Hugging Face (huggingface.co) | [polityka prywatności Hugging Face](https://huggingface.co/privacy) |
-| Gemini API („Rozbudowane”, Twój klucz) | Twoja notatka; przy odpowiadaniu także do 20 ostatnich wiadomości rozmowy (z maks. 2 najnowszymi zdjęciami, na które odpowiadasz) i do 5 Twoich wcześniejszych odpowiedzi (wzorzec stylu) | Google (Gemini API) | [warunki Gemini API](https://ai.google.dev/gemini-api/terms) i [polityka prywatności Google](https://policies.google.com/privacy) — na Twoim koncie |
+| Gemini API („Rozbudowane”, Twój klucz) | Twoja notatka; przy odpowiadaniu także do 100 ostatnich wiadomości rozmowy (z maks. 2 najnowszymi zdjęciami, na które odpowiadasz) i do 5 Twoich wcześniejszych odpowiedzi (wzorzec stylu) | Google (Gemini API) | [warunki Gemini API](https://ai.google.dev/gemini-api/terms) i [polityka prywatności Google](https://policies.google.com/privacy) — na Twoim koncie |
 | Claude API (Twój klucz) | jak wyżej | Anthropic | [zasady Anthropic](https://www.anthropic.com/legal/privacy) — na Twoim koncie |
 | „Zapytaj Claude'a / Gemini” | to samo polecenie trafia do aplikacji Claude albo Gemini na Twoim telefonie; wysyłasz je sam | Anthropic / Google w ramach Twojego konta w tych aplikacjach | zasady tych aplikacji |
 | „⚑ Zgłoś odpowiedź AI” | e-mail z treścią tej jednej odpowiedzi AI, nazwą silnika i wersją aplikacji (bez Twojej notatki i rozmowy); otwiera się w Twojej aplikacji pocztowej, wysyłasz go sam | autor aplikacji (tuz.lukasz@gmail.com) | zgłoszenie służy wyłącznie ocenie i poprawie odpowiedzi AI; usuniemy je na prośbę wysłaną na ten sam adres |

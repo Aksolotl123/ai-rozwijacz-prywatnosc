@@ -4,7 +4,7 @@ title: AI Rozwijacz — polityka prywatności
 
 # Polityka prywatności aplikacji „AI Rozwijacz”
 
-Obowiązuje od: 16 października 2026 r.
+Obowiązuje od: 27 października 2026 r.
 Aplikacja: AI Rozwijacz (Android, identyfikator `pl.airozwijacz.menu`)
 Kontakt w sprawach prywatności: [tuz.lukasz@gmail.com](mailto:tuz.lukasz@gmail.com)
 
@@ -24,7 +24,7 @@ Kontakt w sprawach prywatności: [tuz.lukasz@gmail.com](mailto:tuz.lukasz@gmail.
 |---|---|---|---|
 | Tekst, który zaznaczysz lub udostępnisz aplikacji | od Ciebie | żeby zredagować z niego wiadomość | w pamięci telefonu |
 | Treść powiadomień z komunikatorów (nadawca, wiadomości) | uprawnienie „Dostęp do powiadomień”, które sam włączasz | żeby pokazać rozmowę i zaproponować odpowiedź; w trybie „hub” — żeby wyświetlić własne powiadomienie z przyciskami AI | w pamięci telefonu; historia rozmów — patrz niżej |
-| Historia rozmów | z kolejnych powiadomień i Twoich odpowiedzi | żeby AI widziało wątek, a nie jedno zdanie | na telefonie, zaszyfrowana (AES‑256/GCM, klucz w Android Keystore); tylko gdy „Pamiętaj historię” jest włączone |
+| Historia rozmów | z kolejnych powiadomień i Twoich odpowiedzi; przy rozmowie z jedną osobą także jej numer telefonu, jeśli komunikator poda go w powiadomieniu | żeby AI widziało wątek, a nie jedno zdanie; numer — żeby „Wyślij” otworzył właściwą rozmowę w komunikatorze, gdy powiadomienie już zniknęło | na telefonie, zaszyfrowana (AES‑256/GCM, klucz w Android Keystore); tylko gdy „Pamiętaj historię” jest włączone |
 | Zdjęcia z rozmów | z powiadomień komunikatorów (dostęp tylko, póki powiadomienie jest widoczne); WhatsApp — tylko po włączeniu opcji „Zdjęcia z WhatsAppa”: z folderu odebranych zdjęć WhatsAppa (zdjęcie, które przyszło w chwili wiadomości; bez wysłanych i bez reszty galerii) | żeby pokazać je w okienku odpowiedzi i w powiadomieniu „hub” oraz — na Twoje żądanie — pokazać je AI | kopia na telefonie, w prywatnym katalogu aplikacji: zmniejszona, bez metadanych (np. miejsca zrobienia zdjęcia); usuwana razem z historią rozmowy |
 | Klucze API (Gemini, Anthropic) — opcjonalne | od Ciebie | żeby korzystać z płatnych modeli w chmurze na Twoim koncie | na telefonie, zaszyfrowane kluczem z Android Keystore |
 | Log użycia (silnik, czasy, co zrobiono z wynikiem) | aplikacja | porównywanie silników; eksport CSV na Twoje żądanie | na telefonie; treść tylko po włączeniu opcji „Zapisuj treść w logu” |
